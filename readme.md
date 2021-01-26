@@ -1,4 +1,6 @@
-# Usage
+# 🎋 ReactOverlay
+
+## Usage
 
 ```
   import ReactOverlay from "./reactOverlay";
@@ -8,10 +10,10 @@
 
 When data prop is null, overlay is set to hidden.
 
-# Format of data
+## Format of data
 ```
-          setDialogData({
-            message: "🚀 To the sky",
-            children: <Acomponent />,
-          });
+    setDialogData({
+      message: "🚀 To the sky",
+      children: <Acomponent />,
+    });
 ```
