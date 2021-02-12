@@ -14,10 +14,15 @@
 
 When data prop is null, overlay is set to hidden.
 
-## Format of data
+## Make the dialog visible
 ```
     setDialogData({
       message: "🚀 To the sky",
       children: <Acomponent />,
     });
+```
+
+## Make the dialog invisible
+```
+    setDialogData(null);
 ```
