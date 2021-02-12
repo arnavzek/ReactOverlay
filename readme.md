@@ -5,7 +5,8 @@
 ```
   import ReactOverlay from "./reactOverlay";
   let [dialogData, setDialogData] = useState(null);
-  <ReactOverlay data={dialogData} setData={setDialogData}></ReactOverlay>
+  
+  return <ReactOverlay data={dialogData} setData={setDialogData}></ReactOverlay>
 ```
 
 When data prop is null, overlay is set to hidden.
