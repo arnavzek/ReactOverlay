@@ -6,20 +6,18 @@ let ContentContainer = styled.div`
   left: 31%;
   width: 38%;
   z-index: 57;
-  background: #fff;
   top: 50px;
   border-radius: 5px;
   max-height: 80vh;
-  overflow-y: scroll;
+  color: ${(props) => (props.darkMode ? "#fff" : "#222")};
   padding: 0px 25px;
-  background-color: #fff;
+  background-color: ${(props) => (props.darkMode ? "#222" : "#fff")};
   padding-bottom: 25px;
 `;
 
 let AbsoluteDiv = styled.div`
   position: fixed;
   top: 0;
-
   left: 0;
   z-index: 55;
   height: 100vh;
@@ -72,7 +70,7 @@ function Overlay(props) {
   console.log(props.data.children);
   return (
     <AbsoluteDiv>
-      <ContentContainer>
+      <ContentContainer darkMode={props.darkMode}>
         <Top>
           <H1>{props.data.message}</H1>
           <CloseButton
