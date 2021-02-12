@@ -1,5 +1,7 @@
 # 🎋 ReactOverlay
 
+✓ Dark Mode 
+
 ## Usage
 
 ```
